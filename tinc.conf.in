@@ -1,0 +1,5 @@
+Name = ${TINC_NAME-unknown}
+AddressFamily = ${TINC_ADDRESS_FAMILY-ipv4}
+Device = ${TINC_DEVICE-/dev/net/tun}
+Mode = ${TINC_MODE-switch}
+${TINC_CONFIG_APPEND}
