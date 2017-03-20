@@ -12,6 +12,8 @@ VOLUME /etc/tinc/rsa_pub.key
 VOLUME /etc/tinc/hosts/
 
 ADD /tinc.conf.in /etc/tinc/tinc.conf.in
+ADD /tinc-up /etc/tinc/tinc-up
+ADD /tinc-down /etc/tinc/tinc-down
 ADD /entrypoint.sh /
 
 ENTRYPOINT [ "/entrypoint.sh" ]
