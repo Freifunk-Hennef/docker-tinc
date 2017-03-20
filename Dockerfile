@@ -1,4 +1,4 @@
-FROM ffhef/debian-batman:8.3-2016.5
+FROM ffhef/debian-batman:8.3-2017.0
 
 MAINTAINER Nico <nico@freifunk-hennef.de>
 
