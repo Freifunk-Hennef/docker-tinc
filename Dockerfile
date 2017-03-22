@@ -2,6 +2,11 @@ FROM ffhef/debian-batman:8.3-2017.0
 
 MAINTAINER Nico <nico@freifunk-hennef.de>
 
+ENV TINC_NAME=unkown
+ENV TINC_ADDRESS_FAMILY=ipv4
+ENV TINC_DEVICE=/dev/net/tun
+ENV TINC_MODE=switch
+
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" > /etc/apt/sources.list.d/jessie-backports.list && \
     apt-get update && apt-get -t jessie-backports install -y tinc && apt-get clean && \
     rm /etc/apt/sources.list.d/jessie-backports.list && rm -rf /var/lib/apt/lists /tmp/* /var/tmp/*
