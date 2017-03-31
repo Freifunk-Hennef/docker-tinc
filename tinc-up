@@ -5,3 +5,4 @@ then
 fi
 /sbin/ip link set up dev $INTERFACE
 /usr/local/sbin/batctl if add $INTERFACE
+/sbin/ip link set up bat0
